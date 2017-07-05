@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 自定义TDK -->
+    <title>汇融工资宝 </title>
+        <meta name="keywords" content="汇融">
+    <meta name="description" content="汇融">
+            <!-- Bootstrap -->
+    <link href="image/bootstrap.min[1]_(1).css" rel="stylesheet">
+    <link href="image/common[1]_(1).css" rel="stylesheet" type="text/css">
+	
+    </head>
+  <body data-target="#myScrollspy" data-spy="scroll">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <div class="container">
+      <div class="navbar-header">
+         　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+             <span class="sr-only">Toggle Navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+           <img src="image/logo1.gif" alt="汇融LOGO" height="40">
+              </div>
+      <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+      
+     </div>
+    </div>
+<div class="main-container">
+ 
+  <style type="text/css">
+    .main-container{
+      margin-top: 50px;
+    }
+    .expland1{
+      height: 620px;
+      background-image: url("image/index1[1].jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .expland1-slogan{
+      position: relative;
+      padding-top: 12%;
+    }
+    .expland1-slogan h1{
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .expland1-slogan h3{
+      color: #fff;
+      margin-top: 30px;
+    }
+    .expland2-slogan{
+      padding-top: 30%;
+    }
+    .expland2-slogan h2{font-size: 25px;padding-bottom: 10px;margin-bottom: 10px;}
+    .expland2-gray{background-color: #f2f3f4;}
+    .expland3{
+      background-image: url("image/index5[1].jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .expland3 h1{
+      color: #f7f8f9;
+      text-align: center;
+      font-weight: 100;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .expland3 h2{
+      text-align: center;
+      color: #f7f8f9;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    hr.shortline{
+      width: 60px;
+      margin-left: 0;
+      border: 2px #20ade5 solid;
+    }
+    .expland3-addon h2{margin: 35px 0;}
+    .expland3-addon h3{
+      font-size: 22px;
+      color: #20ade5;
+      padding-top: 20%;
+    }
+    .expland3-addon span.emphasis{
+      font-weight: 700;
+      color: #4a5156;
+    }
+    .expland3-addon a.morerating{
+      float: right;
+      padding-right: 10%;
+      padding-top: 5%;
+    }
+    .expland3-addon .container .row{padding: 0;}
+    .expland4{
+      padding-bottom: 30px;
+    }
+    .expland4 h2{
+      position: relative;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 25px;
+    }
+    /*banner下4个小块*/
+    .expland1addon{
+      background-color: #11192C;
+    }
+    .expland1addon img{
+      padding:40px 0 25px 0 ;
+      width: 100%;
+    }
+    p.addontitle{
+      font-size: 16px;
+      color: #fff;
+    }
+    p.addonlink a{
+      color: #20ade5;
+    }
+    p.addonlink{margin-bottom: 30px;}
+    /*视频弹出*/
+    .popup{
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      z-index: 1000;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      display: none;
+      opacity: 1;
+      background-color: rgba(0,0,0,0.5);
+    }
+    #shipin{
+      position: absolute;
+      top: 20%;
+      z-index:999;
+      padding: 50px;
+      background-color: #2E323B;
+    }
+    #shipin .col-md-6{margin:auto;float: none;}
+    #shipin a.closeshipin{
+      font-size: 22px;
+      line-height: .5;
+      position: absolute;
+      top: 25px;
+      right: 26%;
+      color: #aaa;
+      text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .a_fl {
+        left: 0;
+    }
+    .a_fl, .a_fr {
+        float: right;
+        position: fixed;
+        top: 350px;
+        z-index: 100;
+    }
+@media screen and (max-width: 900px) {
+    .expland1{
+      height: 200px;
+    }
+    .expland2-slogan{
+      padding-top: 0;
+    }
+    .expland1-slogan h1{
+      font-size: 22px;
+    }
+    .expland1addon .col-md-3{
+    }
+    .expland1-slgaddon {
+      background-color:#11192C;
+    }
+    .expland1-slgaddon .row{
+      margin:0;
+    }
+    .expland1-slgaddon h1{
+      color:#fff;
+    }
+    .expland1-slgaddon h3{
+      color:#fff;
+    }
+    .expland1addon img{
+      padding:20px 0 20px 0 ;
+      width: 100%;
+    }
+    .expland3-addon h3{padding-top: 0;}
+    p.addonlink{margin-bottom: 0px;}
+    #shipin{
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      z-index:999;
+      padding: 50px 0;
+      background-color: #2E323B;
+    }
+    #shipin .col-md-6{margin:auto;}
+    #shipin a.closeshipin{right: 4%;}
+}
+
+  @media screen and (min-width: 1000px){
+    .expland3-addon .container{
+      width: 100%;
+    }
+    .expland3-addon .row .col-md-7{padding-right: 0;}
+  }
+   </style>
+		
+       <div class="expland1">
+        <div class="expland1-slogan hidden-xs hidden-sm">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-8 col-md-7 col-md-offset-1">
+              <h1>企业金融创新解决方案提供商</h1>
+              <h3> 工资宝方案</h3>
+               <h3>Salary treasure scheme</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	<div class="expland1-slgaddon hidden-md hidden-lg">
+        	<div class="row text-center">
+        		<h1>创新工资发放新通道</h1>
+        		<h3>均衡企业资金使用</h3>
+        	</div>
+        </div>
+      <div class="expland1addon">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-3">
+              <img src="image/indexaddon_finedirect[1].jpg"></a>
+              <p class="addontitle">自主设备满足小额现金使用需求</p>
+</div>
+
+           <div class="col-md-3">
+            <img alt="汇融公司" src="image/indexaddon_teacher[1].png">
+              <p class="addontitle">PC端柜台操作、结算放心</p>
+</div>
+            <div class="col-md-3">
+             <img src="image/indexaddon_bcxz[1].jpg"></a>
+              <p class="addontitle"> APP端自主业务办理</p>
+</div>
+<!--
+            <div class="col-md-3">
+              <a href="http://www.ehuirong.net/rating/#caifang"><img src="http://www.ehuirong.net/images/indexaddon-caifang.jpg"></a>
+              <p class="addontitle">大咖聊汇融</p>
+              <p class="addonlink"><a href="http://www.ehuirong.net/rating/#caifang">了解更多→</a></p>
+            </div>
+-->
+
+            
+
+            <div class="col-md-3">
+              <img src="image/indexaddon2.jpg">
+              <p class="addontitle">增加员工收益、节省财务费用</p>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="expland2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <div class="expland2-slogan">
+              <h2>全新企业工资发放方案</h2>
+              <p>在国家互联网+战略和万众创新的伟大时代背景下<br>企业迎来来融资创新发展的良好机遇<br>汇融工资宝应运而生</p>
+              </div>
+            </div>
+            <div class="col-md-8 text-center">
+              <img width="750" class="img-responsive" alt="数据化管理" src="image/index2.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="expland2-gray">
+        <div class="container">
+          <div class="row">
+           <!-- <div class="col-md-4 text-center hidden-md hidden-lg">
+              <div class="expland2-slogan">
+              <h2>一体化的工资发放解决方案</h2>
+              <p>汇融自主研发的产品工资宝<br>支持柜台端、自助终端、APP端<br>实名认证、安全可靠</p>
+              </div>-->
+            </div>
+            <div class="col-md-8 text-center">
+              <img width="750" class="img-responsive" alt="一体化的商业智能解决方案" src="image/index3.jpg">
+            </div>
+            <div class="col-md-4 text-center hidden-xs hidden-sm">
+              <div class="expland2-slogan">
+              <h2>一体化的商业智能解决方案</h2>
+              <p>汇融自主研发的产品工资宝<br>支持柜台端、自助终端、APP端<br>实名认证、安全可靠</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <div class="expland2-slogan">
+              <h2>企业与员工实现共赢</h2>
+              <p>企业效益好、员工挣钱多<br>本息有保障，员工干劲足<br>良性循环</p>
+              </div>
+            </div>
+            <div class="col-md-8 text-center">
+              <img width="750" class="img-responsive" alt="企业与员工实现共赢" src="image/index4.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="expland3">
+        <div class="container" id="xianxia">
+          <h1>6个分公司，32个服务网点，提供细腻的本地服务</h1>
+          <img width="1140" class="img-responsive" src="image/index6.png">
+        </div>
+        <div class="container" id="xianshang">
+          <h2>30人线上支持团队，快速响应远程服务需求</h2>
+          <img width="1140" class="img-responsive" src="image/index7.png">
+        </div>
+      </div>
+      <div class="expland3-addon">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>企业客户评语</h2>
+            </div>
+          </div>
+          <!--<div class="row">
+            <div class="col-md-4 col-md-offset-1">
+<hr class="shortline">
+              <p>我们使用汇融的时间不长，<span class="emphasis">极大的便利</span>，原本计划用数月的时间来完成的内容，现在<span class="emphasis">短短的两周</span>节约了。</p>
+            </div>
+            <div class="col-md-7">
+              <img width="100%" class="img-responsive" src="image/index_rating_th[1].jpg">
+            </div>
+          </div>-->
+<div class="row">
+        <div class="col-md-4 col-md-offset-1">
+              <h3> 旭坤照明</h3>
+              <hr class="shortline">
+              <p> 做为本地劳动力密集性企业代表，旭坤照明使用工资宝系统后，因有实体背书，给员工带来了方便的同时，并带来一定的收益，企业资金使用也更加科学、均衡，第一年<span class="emphasis">节省财务费用144万</span>，员工平均每人利息收入<span class="emphasis">增加720元</span>。</p>
+              <p>&nbsp;</p>
+            </div>
+            <div class="col-md-7">
+              <img width="100%" class="img-responsive" src="image/index_rating_58[1].jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="expland4">
+      <div class="container">
+         <div id="expland4slg"><h2>战略合作伙伴</h2></div>
+   <div class="clientslogo">
+           <a href="http://www.ehuirong.net"><img width="1140" class="img-responsive" alt="汇融客户" src="image/clientslogo.jpg"></a>
+         </div>
+      </div>
+     </div>
+      <!--弹出视频-->
+      <div class="popup">
+        <div class="col-md-12 text-center" id="shipin">
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video preload="auto" controls>
+                <source src="http://down.finereport.com/website-resources/fanruanvideo.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <a class="closeshipin">x</a>
+        </div>
+      </div>
+
+      <div class="bot-nav">
+        <div class="container">
+<div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center">
+              <h5>Copyright©2017.山东汇融信息技术服务有限公司 | 备案号</h5>
+        </div>
+          </div>
+        </div>
+      </div>
+      <p id="back-to-top" style="display: none;"><a href="#top"><span></span>返回顶部</a></p>  
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    
+    
+
+
+  
+</body>
+
+</html>
